@@ -81,6 +81,7 @@ app
             name: "Mark Bedross",
             postalCode: "N5B 2M7",
             phone: "3334445678",
+            email: 'markbedross@gmail.com'
         })
     })
 
