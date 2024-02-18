@@ -79,8 +79,10 @@ app
     .get('/getInfo', (req, res) => {
         res.json({
             name: "Mark Bedross",
+            city: "Toronto",
+            province: "ON",
             postalCode: "N5B 2M7",
-            phone: "3334445678",
+            phone: "333-444-5678",
             email: 'markbedross@gmail.com'
         })
     })
