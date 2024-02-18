@@ -6,8 +6,9 @@ const app = express()
 app.use(cors())
 
 app
+    // Education get request handler
     .get('/getEdu', (req, res) => {
-        res.json([
+        res.json([ // sends back array of objects
             {
                 school: "Humber College",
                 program: "Computer Programming",
@@ -20,8 +21,9 @@ app
         ])
     })
 
+    // Experience get request handler
     .get('/getExp', (req, res) => {
-        res.json([
+        res.json([ // sends back array of objects
             {
                 company: "CBC",
                 jobTitle: "Software Developer",
@@ -58,14 +60,16 @@ app
         ])
     })
 
+    // Overview get request handler
     .get('/getOverview', (req, res) => {
-        res.json({
+        res.json({ // sends back single object with key "overview"
             overview: "Dynamic and results-driven professional with over 7 years of experience in software development. Proven expertise in designing and implementing robust, scalable solutions for diverse business needs. Adept at collaborating with cross-functional teams to deliver high-quality software on time and within budget. Strong analytical and problem-solving skills with a commitment to continuous learning and staying abreast of industry trends. Known for excellent communication and interpersonal skills, fostering productive working relationships at all organizational levels. Seeking opportunities to contribute technical proficiency and leadership in a challenging software development role."
         })
     })
 
+    // Skills get request handler
     .get('/getSkills', (req, res) => {
-        res.json([
+        res.json([ // sends back array of Strings
             "Proficient in Java and Python",
             "Familiar with Agile methodologies",
             "Experience with code review and optimization",
@@ -76,8 +80,9 @@ app
         ])
     })
 
+    // Info get request handler
     .get('/getInfo', (req, res) => {
-        res.json({
+        res.json({ // sends back a single object
             name: "Mark Bedross",
             city: "Toronto",
             province: "ON",
@@ -87,5 +92,5 @@ app
         })
     })
 
-
+// start server
 app.listen(8000, () => console.log("listening on port 8000"))
