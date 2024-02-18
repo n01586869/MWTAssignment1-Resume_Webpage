@@ -11,10 +11,11 @@ app
             {
                 school: "Humber College",
                 program: "Computer Programming",
+                type: "Diploma",
                 startDate: 2023,
                 graduationDate: 2024,
-                schoolCity: "Etobicoke",
-                schoolProvince: "ON"
+                city: "Etobicoke",
+                province: "ON"
             }
         ])
     })
