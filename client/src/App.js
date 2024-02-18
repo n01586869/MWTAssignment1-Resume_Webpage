@@ -3,6 +3,7 @@ import './App.css';
 import Experience from './Experience'
 import Education from './Education';
 import Skills from './Skills';
+import Overview from './Overview';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 
   return(
     <div style={{backgroundColor: '#F9F2F1'}}>
+      <Overview fetchData={fetchData}/>
       <Skills fetchData={fetchData} />
       <Education fetchData={fetchData}/>
       <Experience fetchData={fetchData} />
