@@ -2,6 +2,7 @@ import './App.css';
 // import { useState, useEffect } from 'react'
 import Experience from './Experience'
 import Education from './Education';
+import Skills from './Skills';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 
   return(
     <div style={{backgroundColor: '#F9F2F1'}}>
+      <Skills fetchData={fetchData} />
       <Education fetchData={fetchData}/>
       <Experience fetchData={fetchData} />
     </div>

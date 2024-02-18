@@ -67,8 +67,8 @@ app
     .get('/getSkills', (req, res) => {
         res.json([
             "Proficient in Java and Python",
-            "Agile methodologies",
-            "Code review and optimization",
+            "Familiar with Agile methodologies",
+            "Experience with code review and optimization",
             "Strong analytical skills",
             "Innovative problem solver",
             "Committed to staying updated on industry trends",
