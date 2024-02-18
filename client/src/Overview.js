@@ -11,6 +11,7 @@ export default function Overview({ fetchData }) {
 
     return (
         <div className="mx-auto" style={{ maxWidth: 800, paddingTop: 15, paddingBottom: 15 }}>
+            {/* Display overview */}
             {data && data.overview}
         </div>
     )

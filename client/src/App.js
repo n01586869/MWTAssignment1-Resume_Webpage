@@ -13,20 +13,20 @@ function App() {
 
   // generic fetchData function to be passed to all children
   const fetchData = (endpoint, setData) => {
-    {fetch(`${API}${endpoint}`)
-        .then((res) => {
-        if (res.status !== 200) {
-            console.log("error");
-            return Promise.reject("Exit promise");
-        }
-        // console.log(res)
+    // fetch function with API and passed endpoint
+    fetch(`${API}${endpoint}`)
+      .then((res) => {
+        // error handling
+        if (res.status !== 200) return Promise.reject("Status not 200"); // triggers catch block with message "Status not 200"
+        // if status is 200, returns json
         return res.json();
         })
-        .then((json) => {
+      .then((json) => {
+        // call setData callback function
         setData(json);
-        // console.log(json);
         })
-        .catch((err) => console.log("Err: " + err))}
+      // catch error if thrown
+      .catch((err) => console.log("Error: " + err))
    }
     
 
