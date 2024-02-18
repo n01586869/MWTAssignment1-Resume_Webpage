@@ -29,8 +29,8 @@ function App() {
 
   return(
     <div style={{backgroundColor: '#F9F2F1'}}>
-      <Education API={API} fetchData={fetchData}/>
-      <Experience API={API} fetchData={fetchData} />
+      <Education fetchData={fetchData}/>
+      <Experience fetchData={fetchData} />
     </div>
     );
   }
