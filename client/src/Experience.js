@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Experience({ fetchData }) {
 
