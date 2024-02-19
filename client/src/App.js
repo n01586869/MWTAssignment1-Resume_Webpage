@@ -2,7 +2,6 @@ import './App.css';
 import Experience from './Experience'
 import Education from './Education';
 import Skills from './Skills';
-import Overview from './Overview';
 import Info from './Info';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
