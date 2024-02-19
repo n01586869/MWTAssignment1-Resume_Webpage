@@ -17,6 +17,4 @@ body {
 /* styling which applies to each component */
 .component {
   max-width: 800px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }

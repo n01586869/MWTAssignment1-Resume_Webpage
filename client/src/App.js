@@ -31,11 +31,10 @@ function App() {
 
   return(
     <div style={{backgroundColor: '#F9F2F1'}}>
-      <Info fetchData={fetchData}/>
-      <Overview fetchData={fetchData}/>
-      <Skills fetchData={fetchData} />
-      <Education fetchData={fetchData}/>
-      <Experience fetchData={fetchData} />
+        <Info fetchData={fetchData}/>
+        <Skills fetchData={fetchData} />
+        <Education fetchData={fetchData}/>
+        <Experience fetchData={fetchData} />
     </div>
     );
   }
