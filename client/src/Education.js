@@ -19,6 +19,12 @@ export default function Education({ fetchData }) {
                     <div key={edu.school}>
                         {/* Display school name */}
                         <div style={{ fontSize: 18 }}>{edu.school}</div>
+                        
+                        <div style={{ fontSize: 14 }}>
+                            {/* Display school city and province */}
+                            {edu.city} -&nbsp;
+                            {edu.province}
+                        </div>
                         {/* Container for degree type and program, and start/graduation date */}
                         <div style={{ display: "flex", justifyContent: 'space-between', color: '#006DA3' }}>
                             <div>
@@ -30,11 +36,6 @@ export default function Education({ fetchData }) {
                                 <div>{edu.startDate} -&nbsp;</div>
                                 <div> {edu.graduationDate}</div>
                             </div>
-                        </div>
-                        <div>
-                            {/* Display school city and province */}
-                            {edu.city} -&nbsp;
-                            {edu.province}
                         </div>
                     </div>
                 )
