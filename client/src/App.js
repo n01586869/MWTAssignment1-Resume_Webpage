@@ -30,7 +30,7 @@ function App() {
     
 
   return(
-    <div style={{backgroundColor: '#F9F2F1'}}>
+    <div style={{backgroundColor: '#F9F2F1', paddingTop: 0.1}}> {/* for some reason this paddingTop makes a weird bg color glitch get fixed */}
         <Info fetchData={fetchData}/>
         <Skills fetchData={fetchData} />
         <Education fetchData={fetchData}/>

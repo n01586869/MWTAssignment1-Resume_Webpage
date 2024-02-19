@@ -17,4 +17,5 @@ body {
 /* styling which applies to each component */
 .component {
   max-width: 800px;
+  margin-top: 10px;
 }
