@@ -11,13 +11,14 @@ export default function Skills({ fetchData }) {
 
     return (
         <>
+        {/* While data is true, show Card */}
         {data && 
             <Card className="mx-auto component">
                 <Card.Header className="header">
                     <div className="header">Skills</div>
                 </Card.Header>
                 <Card.Body>
-                    {/* While data is true, loop through each skill in array */}
+                    {/* Loop through each skill in array */}
                     {data && data.map((skill) => {
                         return (
                             <div key={skill}>

@@ -11,13 +11,14 @@ export default function Education({ fetchData }) {
 
     return (
         <>
+        {/* While data is true, show Card */}
         {data &&
             <Card className="mx-auto component">
                 <Card.Header>
                     <div className="header">Education</div>
                 </Card.Header>
                 <Card.Body>
-                    {/* While data is true, loop through each object in Edu array */}
+                    {/* Loop through each object in Edu array */}
                     {data.map((edu) => {
                         return (
                             <div key={edu.school}>

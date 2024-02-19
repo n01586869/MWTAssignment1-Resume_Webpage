@@ -12,6 +12,7 @@ export default function Info({ fetchData }) {
 
     return (
         <>
+        {/* While data is true, show Card */}
         {data &&
             <Card className="mx-auto component">
                 <Card.Header>

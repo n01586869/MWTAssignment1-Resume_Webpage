@@ -11,13 +11,14 @@ export default function Experience({ fetchData }) {
 
     return (
         <>
+        {/* While data is true, show Card */}
         {data &&
         <Card className="mx-auto component">
             <Card.Header>
                 <div className="header">Experience</div>
             </Card.Header>
             <Card.Body>
-                {/* While data is true, loop through each object in array */}
+                {/* Loop through each object in array */}
                 {data.map((exp, i) => {
                     return (
                         <div style={{ paddingBottom: 10 }} key={exp.company}>
