@@ -2,18 +2,17 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #f8f9fa;
 }
 
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* styling for headings */
+.header {
+  font-size: 24px;
+  color: #4A556D;
 }
 
-.card-title {
-  color: #007bff;
-}
-
-p {
-  margin: 0;
-  padding: 0;
+/* styling which applies to each component */
+.component {
+  max-width: 800px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

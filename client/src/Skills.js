@@ -10,8 +10,8 @@ export default function Skills({ fetchData }) {
     })
 
     return (
-        <div className="mx-auto" style={{ maxWidth: 800, paddingTop: 15, paddingBottom: 15 }}>
-            <div style={{fontSize: 24, color: '#4A556D'}}>Skills</div>
+        <div className="mx-auto component">
+            <div className="header">Skills</div>
             <hr />
             {/* While data is true, loop through each skill in array */}
             {data && data.map((skill) => {
