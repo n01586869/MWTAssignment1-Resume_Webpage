@@ -1,5 +1,4 @@
 import './App.css';
-// import { useState, useEffect } from 'react'
 import Experience from './Experience'
 import Education from './Education';
 import Skills from './Skills';
