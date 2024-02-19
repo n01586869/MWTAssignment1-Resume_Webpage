@@ -6,9 +6,9 @@ export default function Info({ fetchData }) {
 
     const [data, setData] = useState()
 
-    useEffect(() => {
+    useEffect(() =>
         fetchData('/getInfo', setData)
-    })
+    )
 
     return (
         <>

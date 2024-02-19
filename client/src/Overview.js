@@ -4,9 +4,9 @@ export default function Overview({ fetchData }) {
 
     const [data, setData] = useState()
 
-    useEffect(()=>{
+    useEffect(() =>
         fetchData('/getOverview', setData)
-    })
+    )
 
     return (
         <div className="mx-auto component">

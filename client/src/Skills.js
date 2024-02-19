@@ -5,9 +5,9 @@ export default function Skills({ fetchData }) {
 
     const [data, setData] = useState()
 
-    useEffect(()=>{
+    useEffect(() =>
         fetchData('/getSkills', setData)
-    })
+    )
 
     return (
         <>
