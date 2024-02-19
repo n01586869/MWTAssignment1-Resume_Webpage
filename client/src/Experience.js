@@ -17,7 +17,7 @@ export default function Experience({ fetchData }) {
                 return (
                     <div style={{paddingBottom: 10}} key={exp.company}>
                         {/* Display company name */}
-                        <div style={{ fontSize: 18 }}>{exp.company}</div>
+                        <div className="subheader">{exp.company}</div>
                         {/* Container to display job title and start/end dates in a flex row */}
                         <div style={{ display: "flex", justifyContent: 'space-between', color: '#006DA3' }}>
                             <div>

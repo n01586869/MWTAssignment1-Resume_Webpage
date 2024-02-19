@@ -10,6 +10,10 @@ body {
   color: #4A556D;
 }
 
+.subheader {
+  font-size: 18px;
+}
+
 /* styling which applies to each component */
 .component {
   max-width: 800px;

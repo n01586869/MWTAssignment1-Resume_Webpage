@@ -18,8 +18,8 @@ export default function Education({ fetchData }) {
                 return (
                     <div key={edu.school}>
                         {/* Display school name */}
-                        <div style={{ fontSize: 18 }}>{edu.school}</div>
-                        
+                        <div className="subheader">{edu.school}</div>
+
                         <div style={{ fontSize: 14 }}>
                             {/* Display school city and province */}
                             {edu.city} -&nbsp;
